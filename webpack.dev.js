@@ -8,6 +8,10 @@ module.exports = {
     mode: 'development',
     devtool: 'source-map',
     stats: 'verbose',
+    output: {
+        libraryTarget: 'var',
+        library: 'Client'
+    },
     module: {
         rules: [
             {
@@ -15,7 +19,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: "babel-loader"
             }
-        ]
+        ],
     },
     plugins: [
         new HtmlWebPackPlugin({
@@ -31,5 +35,9 @@ module.exports = {
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
         })
-    ]
+    ],
+    devServer: {
+        port: 8081,
+        host: '127.0.0.1',
+    }
 }
