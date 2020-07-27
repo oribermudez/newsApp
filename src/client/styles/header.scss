@@ -1,5 +1,26 @@
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 40px;
+    background-color: #186c72;
+    color: #fff;
+
+    .sign-up {
+        background-color: #fff;
+        width: 17%;
+        text-align: center;
+        padding: 0.3%;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #186c72;
+
+        &.active {
+            color: #186c72;
+        }
+    }
 }

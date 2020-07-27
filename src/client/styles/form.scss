@@ -1,12 +1,43 @@
 form {
-    border: 1px solid #545454;
-    border-radius: 3px;
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        padding: 5px 20px;
+        line-height: 16px;
+        background-color: transparent;
+        padding: 1.5%;
+        border-radius: 5px;
+    }
+
+    #feedback {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+        color: red;
+    }
+
+    .input-cluster {
+        width: 40vw;
+        display: flex;
+    }
+
+    #url {
+        width: 100%;
+    }
+
+    #submitBtn {
+        width: 15%;
+        color: #fff;
+        background-color: #186c72;
+        border: none;
+    }
+
+    .wrong-input {
+        border: red solid 1px;
+    }
 }
 
-input {
-    padding: 5px 20px;
-    width: 100%;
-    line-height: 16px;
-    margin: 10px 0;
-}
+
