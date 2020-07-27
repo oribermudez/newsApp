@@ -37,13 +37,7 @@ app.post('/article', async (req, res, next) => {
   const response = await fetch(url);
   try {
     const sentiment = await response.json();
-    const sentInfo = {
-      agreement: sentiment.agreement,
-      subjectivity: sentiment.subjectivity,
-      confidence: sentiment.confidence,
-      irony: sentiment.irony
-    }
-    return res.send(sentInfo);
+    return res.send(sentiment);
   }
   catch(error) {
     console.log("Error", error);
