@@ -63,6 +63,14 @@ npm run dev
 ```
 5.- A new window should have shown and you are ready to use the dev server.
 
+## Unit tests
+
+To run the tests please type the following:
+
+```sh
+npm test
+```
+
 ## Built With
 
 * JavaScript
